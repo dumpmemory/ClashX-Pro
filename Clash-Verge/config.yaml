@@ -158,7 +158,7 @@ proxy-providers:
 proxies: null
 proxy-groups:
 
-  - {name: ♻️ Auto, <<: *a4} 
+  - {name: ♻️ Auto, <<: *a4, filter: "香港|HK|(?i)Hong"} 
 
   - {name: HK, <<: *a4, filter: "香港|HK|(?i)Hong"}
   - {name: JP, <<: *a4, filter: "日本|东京|JP|(?i)Japan"}   
