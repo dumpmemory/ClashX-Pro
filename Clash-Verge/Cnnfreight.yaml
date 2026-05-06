@@ -223,6 +223,8 @@ rule-providers:
   Proxy: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/Proxy.yaml, path: ./ruleset/Proxy.yaml}
   
 rules:
+# klikbca.com
+  - DOMAIN-SUFFIX,klikbca.com,ID
 # 汇丰银行
   - DOMAIN-SUFFIX,hsbc.com.hk,DIRECT
   - DOMAIN-SUFFIX,hsbc.com,DIRECT
