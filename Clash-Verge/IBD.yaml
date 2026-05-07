@@ -152,7 +152,7 @@ ipcidr: &a7 {type: http, behavior: ipcidr, interval: 28800}
 proxies: null
 proxy-groups:
 
-  - {name: ♻️ Auto, <<: *a4}
+  - {name: ♻️ Auto, <<: *a4, type: select, proxies: [DIRECT]}
   - {name: HK, <<: *a4, filter: "香港|HK|(?i)Hong"}
   - {name: JP, <<: *a4, filter: "日本|东京|JP|(?i)Japan"}
   - {name: US, <<: *a4, filter: "美国|US|(?i)States|American"}
